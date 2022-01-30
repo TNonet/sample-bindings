@@ -1,0 +1,3 @@
+[submodule "sample-bindings-py"]
+	path = sample-bindings-py
+	url = https://github.com/TNonet/sample-bindings-py
