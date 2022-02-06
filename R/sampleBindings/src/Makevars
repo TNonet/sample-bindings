@@ -1,0 +1,17 @@
+# Default make file
+CXX_STD = CXX11
+PKG_CPPFLAGS=-I. -I./src/include
+PKG_LIBS=$(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+
+# Include all C++ files in src/ and its subdirectories: src/A and src/B 
+SOURCES=Rectangle.cpp RcppExports.cpp src/Rectangle.cpp
+
+# Obtain the object files
+OBJECTS=$(SOURCES:.cpp=.o) 
+
+# Make the shared object
+all: $(SHLIB)
+
+# Provide recipe to remove all objects
+clean:
+	@rm -f $(OBJECTS)

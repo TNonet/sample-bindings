@@ -1,0 +1,5 @@
+useDynLib(sampleBindings, .registration=TRUE)
+import(methods, Rcpp)
+importFrom(Rcpp, evalCpp)
+importFrom(Rcpp, loadModule)
+exportPattern("^[[:alpha:]]+")
