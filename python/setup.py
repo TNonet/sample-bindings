@@ -85,8 +85,8 @@ cython_extensions = [
 
 
 extensions = [
-    *cythonize(cython_extensions,
-               compiler_directives=compiler_directives),
+    # *cythonize(cython_extensions,
+    #            compiler_directives=compiler_directives),
     Pybind11Extension("sample_bindings.pybind_module",
                       sources=["sample_bindings/pybind_module.cpp"],
                       # Example: passing in the version to the compiled code
