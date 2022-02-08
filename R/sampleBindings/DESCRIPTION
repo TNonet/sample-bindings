@@ -9,3 +9,6 @@ Description: Demonstration of a DRY method for sharing common C++ code between p
 License: MIT
 Imports: methods, Rcpp (>= 1.0.5)
 LinkingTo: Rcpp, RcppArmadillo
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
