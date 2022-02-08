@@ -33,7 +33,7 @@ jobs:
           pip install wheel
           pip install Cython  # this should not be needed, but somehow is... pyproject.toml should have this in [build.system]
           pip install pytest-cov
-          pip install .
+          python -m pip install .
       - name: Run tests and coverage (soon to be implemented)
         run: python -m pytest
 
