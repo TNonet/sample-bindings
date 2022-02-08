@@ -1,6 +1,6 @@
 # distutils: language = c++
 
-from ._Rectangle cimport Rectangle
+from sample_bindings.cy_rect.rectangle cimport Rectangle
 
 cdef class PyRectangle:
     cdef Rectangle c_rect

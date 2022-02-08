@@ -1,6 +1,9 @@
 # distutils: language = c++
+# distutils: include_dirs = RECTANGLE_HEADERS
 
-cdef extern from "_Rectangle.h" namespace "shapes":
+# Source: https://cython.readthedocs.io/en/latest/src/userguide/source_files_and_compilation.html#cythonize-arguments
+
+cdef extern from "../src2/include/Rectangle.h" namespace "shapes":
 
     cdef cppclass Rectangle:
         Rectangle() except +
