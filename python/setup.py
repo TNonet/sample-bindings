@@ -98,7 +98,7 @@ print(extensions)
 
 setup(
     name='sample_bindings',
-    cmdclass={'build_py_ext': pybind_build_ext, "build_cy_ext": cython_build_ext},  # Source:
+    cmdclass={'build_ext': pybind_build_ext},  # Source:
     # https://stackoverflow.com/questions/66678268/mix-cython-and-cmake-extensions-in-python-setuptools
     install_requires=['cython'],
     zip_safe=False,
